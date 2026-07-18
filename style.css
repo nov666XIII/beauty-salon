@@ -4,6 +4,10 @@
    共通
 ==================== */
 
+html,body{
+    min-height:100%;
+}
+
 body{
     background-image:url(beauty/背景.jpg);
     background-repeat:no-repeat;
@@ -18,6 +22,7 @@ body{
         background-repeat:no-repeat;
         background-position:center top;
         background-attachment:scroll;
+        min-height:100vh;
     }
 }
 
