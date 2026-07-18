@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="beauty/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>美容室Alice</title>
+  </head>
+
+  <body>
+    <div class="nav" id="nav">☰</div>
+    <nav class="nav-inner" id="nav-inner">
+      <ul>
+        <li><a href="#home" class="nav-link">HOME</a></li>
+        <li><a href="#concept" class="nav-link">CONCEPT</a></li>
+        <li><a href="#menu" class="nav-link">MENU</a></li>
+        <li><a href="#style" class="nav-link">STYLE</a></li>
+        <li><a href="#staff" class="nav-link">STAFF</a></li>
+        <li><a href="#access" class="nav-link">ACCESS</a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        <li><a href="#sns" class="nav-link">SNS</a></li>
+      </ul>
+    </nav>
+
+    <a
+      href="https://beauty.hotpepper.jp/top/"
+      alt="ホットペッパービューティー"
+      class="reserve-bar"
+      target="_blank"
+    >
+      WEB予約
+    </a>
+
+    <header class="header" id="header">
+      <div>美容室 Alice</div>
+      <img src="beauty/看板.jpg" alt="看板" class="hero-img" />
+    </header>
+
+    <section class="hero" id="home">
+      <h1>髪から始まる、新しい自分。</h1>
+      <p>あなたらしさを引き出すヘアデザイン。</p>
+    </section>
+
+    <a href="#header" class="top-btn" id="top-btn">
+      <img src="beauty/logo.png" alt="ロゴ" />
+    </a>
+
+    <section class="concept" id="concept">
+      <h2>一人ひとりに似合うスタイルを。</h2>
+      <img src="beauty/staff3.jpeg" alt="髪" class="conceptphoto" />
+      <p>
+        お客様の髪質やライフスタイルに合わせた ヘアデザインをご提案いたします。
+        毎日のお手入れが楽しくなるような スタイルづくりを心掛けています。
+      </p>
+    </section>
+
+    <!--メニュー-->
+    <section class="menu" id="menu">
+      <div class="menu-sticky">
+        <h2 class="title-link">MENU</h2>
+        <nav class="menu-nav" id="menu-nav">
+          <ul>
+            <li>
+              <div><a href="#cut" class="item">カット</a></div>
+            </li>
+            <li>
+              <div><a href="#color" class="item">カラー</a></div>
+            </li>
+            <li>
+              <div><a href="#parma" class="item">パーマ</a></div>
+            </li>
+            <li>
+              <div><a href="#tritment" class="item">トリートメント</a></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu-inner">
+        <div class="cut" id="cut">
+          <h3 class="category-title">カット</h3>
+
+          <div class="card">
+            <img src="beauty/cut1.jpeg" alt="cut1" />
+            <h3>カット</h3>
+            <p>シャンプー・ブロー込み</p>
+            <p>￥4,500</p>
+          </div>
+
+          <div class="card">
+            <img src="beauty/cut2.jpg" alt="cut2" />
+            <h3>学生カット</h3>
+            <p>シャンプー・ブロー込み</p>
+            <p>￥3,500</p>
+          </div>
+        </div>
+
+        <div class="color" id="color">
+          <h3 class="category-title">カラー</h3>
+
+          <div class="card">
+            <img src="beauty/color1.jpg" alt="color1" />
+            <h3>カラー</h3>
+            <p>ファッションカラー（長さにより料金変動あり）</p>
+            <p>￥6,500～</p>
+          </div>
+
+          <div class="card">
+            <img src="beauty/color2.jpg" alt="color2" />
+            <h3>ハイライトカラー</h3>
+            <p>
+              カラーと組み合わせて御利用可能。ナチュラルで上品なスタイルに。
+            </p>
+            <p>￥3,000～</p>
+          </div>
+        </div>
+
+        <div class="parma" id="parma">
+          <h3 class="category-title">パーマ</h3>
+
+          <div class="card">
+            <img src="beauty/parma1.jpeg" alt="parma1" />
+            <h3>パーマ</h3>
+            <p>
+              縮毛矯正と同時に髪に必要な栄養と潤いを与える事で、柔らかく自然な仕上がりになります。【髪質改善】
+            </p>
+            <p>￥7,500～</p>
+          </div>
+
+          <div class="card">
+            <img src="beauty/parma2.jpg" alt="parma2" />
+            <h3>デジタルパーマ</h3>
+            <p>
+              圧倒的な質感の違い☆トリートメントを補充しながらの施術なので、ダメージレス、カット込み。
+            </p>
+            <p>￥8,350</p>
+          </div>
+        </div>
+
+        <div class="tritment" id="tritment">
+          <h3 class="category-title">トリートメント</h3>
+
+          <div class="card">
+            <img src="beauty/tr1.jpg" alt="tritment1" />
+            <h3>トリートメント</h3>
+            <p>シャンプー、ブロー別途料金 #髪質改善</p>
+            <p>￥3,000～</p>
+          </div>
+
+          <div class="card">
+            <img src="beauty/tr2.jpeg" alt="tritment2" />
+            <h3>髪質改善トリートメント</h3>
+            <p>シャンプー、ブロー別途料金#髪質改善　#極艶トリートメント</p>
+            <p>￥8,000～</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--スタイル-->
+    <section class="style" id="style">
+      <h2 class="title-link">STYLE</h2>
+
+      <!-- PC -->
+      <div class="style-pc">
+        <button id="prev">◁</button>
+        <div class="carousel-inner">
+          <div class="card style-card">
+            <img src="beauty/style1.jpg" alt="" />
+            <h3>インナーカラーとゆるフワパーマ</h3>
+            <p>担当スタイリスト：田中洋司</p>
+          </div>
+
+          <div class="card style-card">
+            <img src="beauty/style2.jpeg" alt="" />
+            <h3>黒髪ロングにインナーカラー</h3>
+            <p>担当スタイリスト：千原浩二</p>
+          </div>
+
+          <div class="card style-card">
+            <img src="beauty/style3.jpg" alt="" />
+            <h3>アッシュベージュにガーリー</h3>
+            <p>担当スタイリスト：海原はるこ</p>
+          </div>
+
+          <div class="card style-card">
+            <img src="beauty/style4.jpg" alt="" />
+            <h3>綺麗で可愛いスタイル</h3>
+            <p>担当スタイリスト：兵頭大樹</p>
+          </div>
+
+          <div class="card style-card">
+            <img src="beauty/style5.jpeg" alt="" />
+            <h3>くるんとセミロング</h3>
+            <p>担当スタイリスト：山本太</p>
+          </div>
+
+          <div class="card style-card">
+            <img src="beauty/style6.jpg" alt="" />
+            <h3>港区女子</h3>
+            <p>担当スタイリスト：豊本聡</p>
+          </div>
+
+          <div class="card style-card">
+            <img src="beauty/style7.jpg" alt="" />
+            <h3>大人可愛い</h3>
+            <p>担当スタイリスト：桜井洋子</p>
+          </div>
+        </div>
+        <button id="next">▷</button>
+      </div>
+
+      <!-- SP -->
+
+      <div class="style-sp">
+        <div class="swiper styleSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card style-card">
+                <img src="beauty/style1.jpg" alt="" />
+                <h3>インナーカラーとゆるフワパーマ</h3>
+                <p>担当スタイリスト：田中洋司</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card style-card">
+                <img src="beauty/style2.jpeg" alt="" />
+                <h3>黒髪ロングにインナーカラー</h3>
+                <p>担当スタイリスト：千原浩二</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card style-card">
+                <img src="beauty/style3.jpg" alt="" />
+                <h3>アッシュベージュにガーリー</h3>
+                <p>担当スタイリスト：海原はるこ</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card style-card">
+                <img src="beauty/style4.jpg" alt="" />
+                <h3>綺麗で可愛いスタイル</h3>
+                <p>担当スタイリスト：兵頭大樹</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card style-card">
+                <img src="beauty/style5.jpeg" alt="" />
+                <h3>くるんとセミロング</h3>
+                <p>担当スタイリスト：山本太</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card style-card">
+                <img src="beauty/style6.jpg" alt="" />
+                <h3>港区女子</h3>
+                <p>担当スタイリスト：豊本聡</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card style-card">
+                <img src="beauty/style7.jpg" alt="" />
+                <h3>大人可愛い</h3>
+                <p>担当スタイリスト：桜井洋子</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--スタッフ-->
+    <section class="staff" id="staff">
+      <h2 class="title-link">STAFF</h2>
+      <div class="staff-inner">
+        <div class="card staff-card">
+          <img src="beauty/staff1.jpg" alt="店長" />
+          <div class="staff-info">
+            <h3>桜井洋子</h3>
+            <p class="career" data-start="1999">スタイリスト</p>
+            <p>
+              お客様一人ひとりに寄り添ったカウンセリングを大切にしています。
+            </p>
+          </div>
+        </div>
+
+        <div class="card staff-card">
+          <img src="beauty/staff2.jpeg" alt="スタイリスト1" />
+          <div class="staff-info">
+            <h3>佐藤花子</h3>
+            <p class="career" data-start="2008">スタイリスト</p>
+            <p>
+              お客様一人ひとりに寄り添ったカウンセリングを大切にしています。
+            </p>
+          </div>
+        </div>
+
+        <div class="card staff-card">
+          <img src="beauty/staff3.jpeg" alt="スタイリスト2" />
+          <div class="staff-info">
+            <h3>海原はるこ</h3>
+            <p class="career" data-start="2013">スタイリスト</p>
+            <p>
+              お客様一人ひとりに寄り添ったカウンセリングを大切にしています。
+            </p>
+          </div>
+        </div>
+
+        <div class="card staff-card">
+          <img src="beauty/staff4.jpg" alt="スタイリスト3" />
+          <div class="staff-info">
+            <p class="career" data-start="2020">スタイリスト</p>
+            <h3>田中洋司</h3>
+            <p>
+              お客様一人ひとりに寄り添ったカウンセリングを大切にしています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--アクセス-->
+    <section class="access" id="access">
+      <h2 class="title-link">ACCESS</h2>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417067.1781567082!2d135.7385550670723!3d35.24786279769587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010acfc4ac3edb%3A0xee09cf98c31a940f!2z55C155C25rmW!5e0!3m2!1sja!2sjp!4v1784161776398!5m2!1sja!2sjp"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <p>日本北海道東京都京都市666-13</p>
+        <p>0120-444-444</p>
+        <p>営業時間 10：00～19：06</p>
+      </div>
+    </section>
+
+    <!--フォーム-->
+    <section class="contact" id="contact">
+      <h2 class="title-link">CONTACT</h2>
+
+      <div class="contact-inner">
+        <form class="form">
+          <p>お名前：</p>
+          <input type="text" />
+
+          <p>お電話番号</p>
+          <input type="tel" />
+
+          <p>メール：</p>
+          <input type="email" />
+
+          <p>ご希望日時</p>
+          <input type="datetime-local" />
+
+          <p>ご予約内容：</p>
+          <textarea></textarea>
+
+          <button type="button" id="send-btn">送信</button>
+        </form>
+
+        <p id="thanks-message"></p>
+      </div>
+    </section>
+
+    <!--SNS-->
+    <div class="sns" id="sns">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="beauty/ig s.png" alt="Instagram" />
+      </a>
+
+      <a href="https://x.com/" target="_blank">
+        <img src="beauty/x b s.png" alt="X" />
+      </a>
+
+      <a href="https://www.facebook.com/facebook/?lang=ja" target="_blank">
+        <img src="beauty/fb s.png" alt="facebook" />
+      </a>
+
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="beauty/yu s.png" alt="youtube" />
+      </a>
+
+      <a href="https://www.tiktok.com/" target="_blank">
+        <img src="beauty/tt s.png" alt="tiktok" />
+      </a>
+    </div>
+
+    <!-- フッター-->
+    <footer class="footer">© 2026 NOV</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
