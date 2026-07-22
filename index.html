@@ -355,28 +355,33 @@
     <section class="contact" id="contact">
       <h2 class="title-link">CONTACT</h2>
 
-      <div class="contact-inner">
-        <form class="form">
+      <form
+        class="form"
+        action="https://formspree.io/f/mgogzboa"
+        method="POST"
+        id="contact-form"
+      >
+        <div class="contact-inner">
           <p>お名前：</p>
-          <input type="text" />
+          <input type="text" name="name" required />
 
-          <p>お電話番号</p>
-          <input type="tel" />
+          <p>お電話番号：</p>
+          <input type="tel" name="tel" />
 
           <p>メール：</p>
-          <input type="email" />
+          <input type="email" name="email" required />
 
-          <p>ご希望日時</p>
-          <input type="datetime-local" />
+          <p>ご希望日時：</p>
+          <input type="datetime-local" name="datetime" />
 
           <p>ご予約内容：</p>
-          <textarea></textarea>
+          <textarea name="message"></textarea>
 
-          <button type="button" id="send-btn">送信</button>
-        </form>
+          <button type="submit">送信</button>
 
-        <p id="thanks-message"></p>
-      </div>
+          <p id="thanks-message"></p>
+        </div>
+      </form>
     </section>
 
     <!--SNS-->
@@ -404,6 +409,16 @@
 
     <!-- フッター-->
     <footer class="footer">© 2026 NOV</footer>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h3>送信ありがとうございました</h3>
+
+        <p>ご予約内容を確認後、 担当者よりご連絡いたします。</p>
+
+        <button id="modal-close">OK</button>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

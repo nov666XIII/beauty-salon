@@ -58,6 +58,7 @@ careers.forEach(function(item){
 
 });
 
+/*
 document
 .getElementById("send-btn")
 .addEventListener("click", function(){
@@ -66,7 +67,7 @@ document
     
     this.disabled = true;
 });
-
+*/
 
 /* SP */
 const swiper = new Swiper(".styleSwiper", {
@@ -143,5 +144,61 @@ document
     }
 
     updateCarousel();
+
+});
+
+
+/*フォーム*/
+const form =
+document.getElementById("contact-form");
+
+const modal =
+document.getElementById("modal");
+
+const modalClose =
+document.getElementById("modal-close");
+
+form.addEventListener(
+"submit",
+async function(e){
+
+    e.preventDefault();
+
+    const data =
+    new FormData(form);
+
+    const response =
+    await fetch(
+        form.action,
+        {
+            method:"POST",
+            body:data,
+            headers:{
+                "Accept":"application/json"
+            }
+        }
+    );
+
+    if(response.ok){
+
+        modal.classList.add("active");
+
+        form.reset();
+
+    }else{
+
+        alert("送信に失敗しました");
+
+    }
+
+});
+
+modalClose.addEventListener(
+"click",
+function(){
+
+    modal.classList.remove(
+        "active"
+    );
 
 });
